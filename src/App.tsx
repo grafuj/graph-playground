@@ -1,5 +1,5 @@
 import { useState } from "react";
-import blank
+import blank from "../assets/images/blank-1.png";
 import "./App.css";
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
   return (
     <>
       <div>
+        <img src={blank} alt="blank graph" />
       </div>
       <h1>Graph Playground</h1>
 
