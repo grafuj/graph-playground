@@ -5,12 +5,35 @@
   text-align: center;
 }
 
+.graph-img {
+  max-height: 70vh;
+}
+
+.graphAndMath {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  gap: 1rem;
+}
+
+.inputBase {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import blank from "../assets/images/blank-1.png";
+import blank from "./assets/images/blank-1.png";
 import "./App.css";
 
 function App() {
@@ -7,12 +7,20 @@ function App() {
 
   return (
     <>
-      <div>
-        <img src={blank} alt="blank graph" />
+      <div className="pageDiv">
+        <div className="graphAndMath">
+          <div>
+            <h1>input</h1>
+            <h2>y = <input className="inputBase"></input>x + <input className="inputBase"></input></h2>
+          </div>
+          <div>
+            <img className="graph-img" src={blank} alt="line graph" />
+          </div>
+        </div>
+        <h1>Graph Playground</h1>
       </div>
-      <h1>Graph Playground</h1>
 
-      <div className="card"></div>
+      {/* <div className="card"></div> */}
     </>
   );
 }
